@@ -13,8 +13,7 @@ function App() {
 
   return (
     <div 
-      className="min-h-screen bg-cover bg-center relative flex flex-col items-center justify-center p-6 overflow-hidden"
-      style={{ backgroundImage: "url('https://example.com/your-image.jpg')" }} // Add custom image URL here
+      className="min-h-screen bg-white relative flex flex-col items-center justify-center p-6 overflow-hidden" // White background
     >
       {/* Milky Way Stars Effect */}
       <div className="absolute inset-0 pointer-events-none">
