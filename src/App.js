@@ -13,27 +13,8 @@ function App() {
 
   return (
     <div 
-      className="min-h-screen bg-white relative flex flex-col items-center justify-center p-6 overflow-hidden" // White background
+      className="min-h-screen bg-pink-100 relative flex flex-col items-center justify-center p-6 overflow-hidden" // Light pink background
     >
-      {/* Milky Way Stars Effect */}
-      <div className="absolute inset-0 pointer-events-none">
-        {Array.from({ length: 200 }).map((_, index) => (
-          <span
-            key={index}
-            className="absolute text-white text-xl animate-twinkling"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${2 + Math.random() * 3}s`,
-              opacity: Math.random(),
-            }}
-          >
-            ★
-          </span>
-        ))}
-      </div>
-
       {/* Heart Rain */}
       {roseVisible && (
         <div className="absolute inset-0 pointer-events-none z-10">
@@ -86,7 +67,7 @@ function App() {
           />
           
           {/* Surprise Message */}
-          <p className="text-2xl text-white font-semibold mt-6 px-4 md:px-8 max-w-lg mx-auto leading-relaxed">
+          <p className="text-2xl text-orange-700 font-semibold mt-6 px-4 md:px-8 max-w-lg mx-auto leading-relaxed">
             Just a little surprise to make you smile! 💖
           </p>
         </div>
